@@ -1,0 +1,35 @@
+var demographics_block = {
+  type: "survey-dropdown",
+  preamble: "<h1>Demographic questionnaire</h1><p>Please answer the following demographic questions.  Your payment will not be affected by your answers.</p>",
+  questions: [
+    { prompt: "What is your college-level background in philosophy, linguistics, and logic?",
+      options: [ "----",
+                 "None",
+                 "1 undergraduate-level course",
+                 "2 or more undergraduate-level courses",
+                 "1 or more graduate-level courses" ],
+      labels: [ "NA", "none", "1ug", "2+ug", "1+g" ] },
+    { prompt: "How much did you rely on notes or diagrams?",
+      options: [ "----",
+                 "Not at all",
+                 "Somewhat",
+                 "A lot" ],
+      labels: [ "NA", "not", "somewhat", "lots" ] },
+    { prompt: "What is your gender?",
+      options: [ "----", "Male", "Female", "Other", "Prefer not to say" ],
+      labels: [ "NA", "male", "female", "other", "NA"] },
+    { prompt: "How old are you?",
+      options: [ "----",
+                 "Less than 18",
+                 "18 to 24",
+                 "25 to 34",
+                 "35 to 44",
+                 "45 to 54",
+                 "55 to 64",
+                 "65 to 74",
+                 "75 or older" ],
+      labels: [ "NA", "-18", "18-24", "25-34", "35-44", "45-54", "55-64", "65-74", "75+" ]
+    }
+  ],
+  data: { questionId: "demo" }
+};
