@@ -1,4 +1,16 @@
 /*TODO: add more exercice trials ?*/
+function saveData(name, data_in){
+    var url = 'record_result.php';
+    var data_to_send = {filename: name, filedata: data_in};
+    fetch(url, {
+        method: 'POST',
+        body: JSON.stringify(data_to_send),
+        headers: new Headers({
+            'Content-Type': 'application/json'
+        })
+    });
+}
+
 
 //Intro
 var welcome_0 = {
